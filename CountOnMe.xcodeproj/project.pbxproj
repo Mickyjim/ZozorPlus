@@ -13,6 +13,7 @@
 		C926DAE41D7581BB00477020 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C926DAE31D7581BB00477020 /* Assets.xcassets */; };
 		C926DAE71D7581BB00477020 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C926DAE51D7581BB00477020 /* LaunchScreen.storyboard */; };
 		ED1926CA220D84D700164D68 /* CountOnMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1926C9220D84D700164D68 /* CountOnMeTests.swift */; };
+		EDAB0A1D220E3D3C004A935D /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB0A1C220E3D3C004A935D /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		ED1926C7220D84D700164D68 /* CountOnMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountOnMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED1926C9220D84D700164D68 /* CountOnMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOnMeTests.swift; sourceTree = "<group>"; };
 		ED1926CB220D84D700164D68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDAB0A1C220E3D3C004A935D /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +79,11 @@
 		C926DADB1D7581BB00477020 /* CountOnMe */ = {
 			isa = PBXGroup;
 			children = (
+				EDAB0A1F220E3E80004A935D /* Supporting Files */,
+				EDAB0A1A220E3C92004A935D /* Model */,
+				EDAB0A1B220E3C9B004A935D /* Controller */,
 				C926DADC1D7581BB00477020 /* AppDelegate.swift */,
-				C926DADE1D7581BB00477020 /* ViewController.swift */,
-				C926DAE01D7581BB00477020 /* Main.storyboard */,
+				EDAB0A1E220E3E61004A935D /* View */,
 				C926DAE31D7581BB00477020 /* Assets.xcassets */,
 				C926DAE51D7581BB00477020 /* LaunchScreen.storyboard */,
 				C926DAE81D7581BB00477020 /* Info.plist */,
@@ -95,6 +99,37 @@
 				ED1926CB220D84D700164D68 /* Info.plist */,
 			);
 			path = CountOnMeTests;
+			sourceTree = "<group>";
+		};
+		EDAB0A1A220E3C92004A935D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EDAB0A1C220E3D3C004A935D /* Calculator.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EDAB0A1B220E3C9B004A935D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C926DADE1D7581BB00477020 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EDAB0A1E220E3E61004A935D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C926DAE01D7581BB00477020 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EDAB0A1F220E3E80004A935D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +237,7 @@
 			files = (
 				C926DADF1D7581BB00477020 /* ViewController.swift in Sources */,
 				C926DADD1D7581BB00477020 /* AppDelegate.swift in Sources */,
+				EDAB0A1D220E3D3C004A935D /* Calculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

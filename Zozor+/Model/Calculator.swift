@@ -1,14 +1,14 @@
 //
-//  ViewController.swift
+//  Calculator.swift
 //  CountOnMe
 //
-//  Created by Ambroise COLLON on 30/08/2016.
-//  Copyright © 2016 Ambroise Collon. All rights reserved.
+//  Created by Michael Favre on 08/02/2019.
+//  Copyright © 2019 Ambroise Collon. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-class ViewController: UIViewController {
+class Calculator {
     // MARK: - Properties
     var stringNumbers: [String] = [String()]
     var operators: [String] = ["+"]
@@ -17,71 +17,34 @@ class ViewController: UIViewController {
         if let stringNumber = stringNumbers.last {
             if stringNumber.isEmpty {
                 if stringNumbers.count == 1 {
-                    let alertVC = UIAlertController(title: "Zéro!", message: "Démarrez un nouveau calcul !", preferredStyle: .alert)
+                    /*let alertVC = UIAlertController(title: "Zéro!", message: "Démarrez un nouveau calcul !", preferredStyle: .alert)
                     alertVC.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
                     self.present(alertVC, animated: true, completion: nil)
                 } else {
                     let alertVC = UIAlertController(title: "Zéro!", message: "Entrez une expression correcte !", preferredStyle: .alert)
                     alertVC.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-                    self.present(alertVC, animated: true, completion: nil)
+                    self.present(alertVC, animated: true, completion: nil)*/
                 }
                 return false
             }
         }
         return true
     }
-
+    
     var canAddOperator: Bool {
         if let stringNumber = stringNumbers.last {
             if stringNumber.isEmpty {
-                let alertVC = UIAlertController(title: "Zéro!", message: "Expression incorrecte !", preferredStyle: .alert)
-                alertVC.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-                self.present(alertVC, animated: true, completion: nil)
+                //  let alertVC = UIAlertController(title: "Zéro!", message: "Expression incorrecte !", preferredStyle: .alert)
+               // alertVC.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+               // self.present(alertVC, animated: true, completion: nil)
                 return false
             }
         }
         return true
     }
-
-
-    // MARK: - Outlets
-
-    @IBOutlet weak var textView: UITextView!
-    @IBOutlet var numberButtons: [UIButton]!
-
-    // MARK: - Action
-
-    @IBAction func tappedNumberButton(_ sender: UIButton) {
-        for (i, numberButton) in numberButtons.enumerated() {
-            if sender == numberButton {
-                addNewNumber(i)
-            }
-        }
-    }
-
-    @IBAction func plus() {
-        if canAddOperator {
-        	operators.append("+")
-        	stringNumbers.append("")
-            updateDisplay()
-        }
-    }
-
-    @IBAction func minus() {
-        if canAddOperator {
-            operators.append("-")
-            stringNumbers.append("")
-            updateDisplay()
-        }
-    }
-
-    @IBAction func equal() {
-        calculateTotal()
-    }
-
-
+    
     // MARK: - Methods
-
+    
     func addNewNumber(_ newNumber: Int) {
         if let stringNumber = stringNumbers.last {
             var stringNumberMutable = stringNumber
@@ -90,12 +53,12 @@ class ViewController: UIViewController {
         }
         updateDisplay()
     }
-
+    
     func calculateTotal() {
         if !isExpressionCorrect {
             return
         }
-
+        
         var total = 0
         for (i, stringNumber) in stringNumbers.enumerated() {
             if let number = Int(stringNumber) {
@@ -106,12 +69,12 @@ class ViewController: UIViewController {
                 }
             }
         }
-
-        textView.text = textView.text + "=\(total)"
-
+        
+        //textView.text = textView.text + "=\(total)"
+        
         clear()
     }
-
+    
     func updateDisplay() {
         var text = ""
         for (i, stringNumber) in stringNumbers.enumerated() {
@@ -122,9 +85,9 @@ class ViewController: UIViewController {
             // Add number
             text += stringNumber
         }
-        textView.text = text
+        //textView.text = text
     }
-
+    
     func clear() {
         stringNumbers = [String()]
         operators = ["+"]
