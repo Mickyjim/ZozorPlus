@@ -8,22 +8,24 @@
 
 import Foundation
 
+protocol AlertHandler {
+    func displayAlert(message: String)
+}
+
 class Calculator {
+    
+    var alertHandlerDelegate: AlertHandler?
+    
     // MARK: - Properties
     var stringNumbers: [String] = [String()]
     var operators: [String] = ["+"]
-    var index = 0
     var isExpressionCorrect: Bool {
         if let stringNumber = stringNumbers.last {
             if stringNumber.isEmpty {
                 if stringNumbers.count == 1 {
-                    /*let alertVC = UIAlertController(title: "Zéro!", message: "Démarrez un nouveau calcul !", preferredStyle: .alert)
-                    alertVC.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-                    self.present(alertVC, animated: true, completion: nil)
+                    alertHandlerDelegate?.displayAlert(message: "Démarrez un nouveau calcul !")
                 } else {
-                    let alertVC = UIAlertController(title: "Zéro!", message: "Entrez une expression correcte !", preferredStyle: .alert)
-                    alertVC.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-                    self.present(alertVC, animated: true, completion: nil)*/
+                    alertHandlerDelegate?.displayAlert(message: "Entrez une expression correcte !")
                 }
                 return false
             }
@@ -34,9 +36,7 @@ class Calculator {
     var canAddOperator: Bool {
         if let stringNumber = stringNumbers.last {
             if stringNumber.isEmpty {
-                //  let alertVC = UIAlertController(title: "Zéro!", message: "Expression incorrecte !", preferredStyle: .alert)
-               // alertVC.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-               // self.present(alertVC, animated: true, completion: nil)
+                alertHandlerDelegate?.displayAlert(message: "Expression incorrecte !")
                 return false
             }
         }
@@ -45,18 +45,18 @@ class Calculator {
     
     // MARK: - Methods
     
-    func addNewNumber(_ newNumber: Int) {
+    func addNewNumber(_ newNumber: Int) -> String {
         if let stringNumber = stringNumbers.last {
             var stringNumberMutable = stringNumber
             stringNumberMutable += "\(newNumber)"
             stringNumbers[stringNumbers.count-1] = stringNumberMutable
         }
-        updateDisplay()
+        return updateDisplay()
     }
     
-    func calculateTotal() {
+    func calculateTotal() -> String {
         if !isExpressionCorrect {
-            return
+            return ""
         }
         
         var total = 0
@@ -69,28 +69,46 @@ class Calculator {
                 }
             }
         }
-        
+    
         //textView.text = textView.text + "=\(total)"
-        
-        clear()
+        //clear()
+        return String(total)
     }
     
-    func updateDisplay() {
+    func plus() -> String {
+        if canAddOperator {
+            operators.append("+")
+            stringNumbers.append("")
+        }
+        return updateDisplay()
+    }
+    
+    func minus() -> String {
+        if canAddOperator {
+            operators.append("-")
+            stringNumbers.append("")
+        }
+        return updateDisplay()
+    }
+    
+    func updateDisplay() -> String {
         var text = ""
         for (i, stringNumber) in stringNumbers.enumerated() {
+            
             // Add operator
             if i > 0 {
                 text += operators[i]
             }
+            
             // Add number
             text += stringNumber
         }
-        //textView.text = text
+        return text
+      
     }
     
     func clear() {
         stringNumbers = [String()]
         operators = ["+"]
-        index = 0
     }
 }
