@@ -17,8 +17,8 @@ class Calculator {
     var alertHandlerDelegate: AlertHandler?
     
     // MARK: - Properties
-    var stringNumbers: [String] = [String()]
-    var operators: [String] = ["+"]
+    private var stringNumbers: [String] = [String()]
+    private var operators: [String] = ["+"]
     var isExpressionCorrect: Bool {
         if let stringNumber = stringNumbers.last {
             if stringNumber.isEmpty {
@@ -71,7 +71,7 @@ class Calculator {
         }
     
         //textView.text = textView.text + "=\(total)"
-        //clear()
+        clear()
         return String(total)
     }
     
@@ -91,7 +91,7 @@ class Calculator {
         return updateDisplay()
     }
     
-    func updateDisplay() -> String {
+    private func updateDisplay() -> String {
         var text = ""
         for (i, stringNumber) in stringNumbers.enumerated() {
             
@@ -107,7 +107,7 @@ class Calculator {
       
     }
     
-    func clear() {
+    private func clear() {
         stringNumbers = [String()]
         operators = ["+"]
     }

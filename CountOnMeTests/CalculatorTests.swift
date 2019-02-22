@@ -22,8 +22,35 @@ class CalculatorTests: XCTestCase {
     }
 
     func testGivenCanAddOperator_WhenStringNumbersIsNotEmpty_ThenShouldReturnTrue() {
-        
         let _ = calculator.addNewNumber(1)
         XCTAssertTrue(calculator.canAddOperator)
+    }
+    
+    func testGivenIsExpressionCorrect_WhenStringNumbersIsEmpty_ThenShouldReturnFalse() {
+        XCTAssertFalse(calculator.isExpressionCorrect)
+    }
+
+    func testGivenIsExpressionCorrect_WhenStringNumbersContainsValues_ThenShouldReturnFalse() {
+        let _ = calculator.addNewNumber(1)
+        let _ = calculator.plus()
+        XCTAssertFalse(calculator.isExpressionCorrect)
+    }
+    
+    func testGivenCanAddOperator_WhenStringNumbersContainsAValue_ThenShouldReturnTrue() {
+        let _ = calculator.addNewNumber(1)
+        XCTAssertTrue(calculator.isExpressionCorrect)
+    }
+    
+    func testGivenCalculateTotal_WhenCalculationIsCorrect_ThenShouldGiveACorrectResult() {
+        let _ = calculator.addNewNumber(1)
+        let _ = calculator.minus()
+        let _ = calculator.addNewNumber(1)
+        XCTAssertEqual(calculator.calculateTotal(), "0")
+    }
+    
+    func testGivenCalculateTotal_WhenCalculationIsIncorrect_ThenShouldGiveAIncorrectResult() {
+        let _ = calculator.addNewNumber(1)
+        let _ = calculator.minus()
+        XCTAssertEqual(calculator.calculateTotal(), "")
     }
 }
