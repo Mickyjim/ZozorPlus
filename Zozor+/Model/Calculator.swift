@@ -59,9 +59,9 @@ class Calculator {
             return ""
         }
         
-        var total = 0
+        var total: Double = 0
         for (i, stringNumber) in stringNumbers.enumerated() {
-            if let number = Int(stringNumber) {
+            if let number = Double(stringNumber) {
                 if operators[i] == "+" {
                     total += number
                 } else if operators[i] == "-" {
@@ -70,7 +70,6 @@ class Calculator {
             }
         }
     
-        //textView.text = textView.text + "=\(total)"
         clear()
         return String(total)
     }
@@ -87,6 +86,21 @@ class Calculator {
         if canAddOperator {
             operators.append("-")
             stringNumbers.append("")
+        }
+        return updateDisplay()
+    }
+    
+    func radius() -> String {
+        if canAddOperator {
+            guard let result = Double(calculateTotal()) else { return updateDisplay() }
+            clear()
+            let squareValue = sqrt(result)
+            if let stringNumber = stringNumbers.last {
+                var stringNumberMutable = stringNumber
+                stringNumberMutable += "\(squareValue)"
+                stringNumbers[stringNumbers.count-1] = stringNumberMutable
+            }
+            return String(squareValue)
         }
         return updateDisplay()
     }

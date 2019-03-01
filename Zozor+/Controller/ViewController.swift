@@ -20,11 +20,9 @@ class ViewController: UIViewController {
     // MARK: - Action
 
     @IBAction func tappedNumberButton(_ sender: UIButton) {
-        for (i, numberButton) in numberButtons.enumerated() {
-            if sender == numberButton {
-               textView.text = calculate.addNewNumber(i)
-            }
-        }
+        guard let buttonTitle = sender.title(for: .normal) else {return}
+        guard let number = Int(buttonTitle) else {return}
+        textView.text = calculate.addNewNumber(number)
     }
 
     @IBAction func operatorTapped(_ sender: UIButton) {
@@ -33,6 +31,8 @@ class ViewController: UIViewController {
             textView.text = calculate.plus()
         case "-":
             textView.text = calculate.minus()
+        case "√":
+            textView.text = calculate.radius()
         case "=":
             textView.text = calculate.calculateTotal()
         default:

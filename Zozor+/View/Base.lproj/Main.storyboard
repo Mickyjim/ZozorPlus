@@ -45,7 +45,7 @@
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="tappedNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UcV-c8-FMT"/>
+                                                            <action selector="tappedNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uud-id-lxZ"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86l-DO-J8m">
@@ -56,7 +56,7 @@
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="tappedNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DHm-YV-0vV"/>
+                                                            <action selector="tappedNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QXf-AN-3sh"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKJ-lP-BeQ">
@@ -67,7 +67,7 @@
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="tappedNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y25-f0-kxB"/>
+                                                            <action selector="tappedNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ca6-XQ-gRf"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -83,7 +83,7 @@
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="tappedNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J6L-TG-Mks"/>
+                                                            <action selector="tappedNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CM6-2F-6jI"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3X-cI-gqf">
@@ -94,7 +94,7 @@
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="tappedNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1hA-YT-IjF"/>
+                                                            <action selector="tappedNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cRD-z4-BMy"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5iN-WA-tqI">
@@ -105,7 +105,7 @@
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="tappedNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fRC-x0-z9Z"/>
+                                                            <action selector="tappedNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bnl-RI-8ct"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GgJ-QU-2gW">
@@ -116,7 +116,7 @@
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="tappedNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qae-dh-Zt2"/>
+                                                            <action selector="tappedNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rat-LD-dK6"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -132,7 +132,7 @@
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="tappedNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UaQ-aW-OVq"/>
+                                                            <action selector="tappedNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sXD-yk-nGf"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zx3-qU-jRo">
@@ -143,7 +143,7 @@
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="tappedNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RgA-AN-J9E"/>
+                                                            <action selector="tappedNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6GZ-x2-IAg"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="57K-hd-XBz">
@@ -154,7 +154,7 @@
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="tappedNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XDb-u3-wd1"/>
+                                                            <action selector="tappedNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oyb-cF-Vyi"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -165,7 +165,7 @@
                                         <rect key="frame" x="0.0" y="665" width="335" height="63"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9t-JB-KHx">
-                                                <rect key="frame" x="0.0" y="0.0" width="101.66666666666667" height="63"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="72.666666666666671" height="63"/>
                                                 <color key="backgroundColor" red="0.46913260918215349" green="0.71495165745856348" blue="0.62407517235679066" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                                 <state key="normal" title="+">
@@ -176,7 +176,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1md-mv-IxN">
-                                                <rect key="frame" x="116.66666666666666" y="0.0" width="101.66666666666666" height="63"/>
+                                                <rect key="frame" x="87.666666666666686" y="0.0" width="72.333333333333314" height="63"/>
                                                 <color key="backgroundColor" red="0.87294975828729282" green="0.37112226881503746" blue="0.32504552810982973" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                                 <state key="normal" title="-">
@@ -186,8 +186,19 @@
                                                     <action selector="operatorTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iw8-vT-LWJ"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAA-EP-TED">
+                                                <rect key="frame" x="175" y="0.0" width="72.666666666666686" height="63"/>
+                                                <color key="backgroundColor" red="0.2156862745" green="0.5568627451" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                                <state key="normal" title="√">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="operatorTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ymz-HJ-lEb"/>
+                                                </connections>
+                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9e-qZ-ZAT">
-                                                <rect key="frame" x="233.33333333333334" y="0.0" width="101.66666666666666" height="63"/>
+                                                <rect key="frame" x="262.66666666666669" y="0.0" width="72.333333333333314" height="63"/>
                                                 <color key="backgroundColor" red="0.94643473756906082" green="0.64318747398780474" blue="0.12665354139525944" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                                 <state key="normal" title="=">

@@ -45,12 +45,25 @@ class CalculatorTests: XCTestCase {
         let _ = calculator.addNewNumber(1)
         let _ = calculator.minus()
         let _ = calculator.addNewNumber(1)
-        XCTAssertEqual(calculator.calculateTotal(), "0")
+        XCTAssertEqual(calculator.calculateTotal(), "0.0")
     }
     
     func testGivenCalculateTotal_WhenCalculationIsIncorrect_ThenShouldGiveAIncorrectResult() {
         let _ = calculator.addNewNumber(1)
         let _ = calculator.minus()
         XCTAssertEqual(calculator.calculateTotal(), "")
+    }
+    
+    func testGivenRadius_WhenCalculationIsCorrect_ThenShouldGiveACorrectResult() {
+        let _ = calculator.addNewNumber(16)
+        let _ = calculator.radius()
+        XCTAssertEqual(calculator.calculateTotal(), "4.0")
+    }
+
+    func testGivenRadius_WhenCalculationIsIncorrect_ThenShouldGiveAIncorrectResult() {
+        let _ = calculator.addNewNumber(16)
+        let _ = calculator.plus()
+        let radius = calculator.radius()
+        XCTAssertEqual(radius, "16+")
     }
 }
