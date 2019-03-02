@@ -17,6 +17,7 @@ class Calculator {
     var alertHandlerDelegate: AlertHandler?
     
     // MARK: - Properties
+    
     private var stringNumbers: [String] = [String()]
     private var operators: [String] = ["+"]
     var isExpressionCorrect: Bool {
@@ -73,6 +74,7 @@ class Calculator {
         clear()
         return String(total)
     }
+    // MARK: Operators
     
     func plus() -> String {
         if canAddOperator {
@@ -90,7 +92,7 @@ class Calculator {
         return updateDisplay()
     }
     
-    func radius() -> String {
+    func squareRoot() -> String {
         if canAddOperator {
             guard let result = Double(calculateTotal()) else { return updateDisplay() }
             clear()
@@ -121,7 +123,9 @@ class Calculator {
       
     }
     
-    private func clear() {
+    // MARK: Screen display clearing
+    
+    func clear() {
         stringNumbers = [String()]
         operators = ["+"]
     }

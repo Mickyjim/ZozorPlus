@@ -56,14 +56,14 @@ class CalculatorTests: XCTestCase {
     
     func testGivenRadius_WhenCalculationIsCorrect_ThenShouldGiveACorrectResult() {
         let _ = calculator.addNewNumber(16)
-        let _ = calculator.radius()
+        let _ = calculator.squareRoot()
         XCTAssertEqual(calculator.calculateTotal(), "4.0")
     }
 
     func testGivenRadius_WhenCalculationIsIncorrect_ThenShouldGiveAIncorrectResult() {
         let _ = calculator.addNewNumber(16)
         let _ = calculator.plus()
-        let radius = calculator.radius()
+        let radius = calculator.squareRoot()
         XCTAssertEqual(radius, "16+")
     }
 }
